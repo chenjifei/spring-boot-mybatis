@@ -1,2 +1,4 @@
 # spring-boot-mybatis
-spring-boot-mybatis-based-xml
+spring-boot 2.0.1
+mybatis
+基于xml配置项目
