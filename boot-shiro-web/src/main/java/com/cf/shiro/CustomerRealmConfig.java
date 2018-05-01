@@ -6,7 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
+//在ShiroConfiguration中要使用@Bean在ApplicationContext注入MyRealm，不能直接new对象。 
+//道理和Controller中调用Service一样，都要是SpringBean，不能自己new。
 @Configuration
 public class CustomerRealmConfig {
 	private static final Logger log = LoggerFactory.getLogger(CustomerRealmConfig.class);
