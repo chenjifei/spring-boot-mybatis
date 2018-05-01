@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Boot Shiro</title>
+</head>
+<body>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			url : 'http://localhost:8080/user',
+			method : 'get',
+			data : {},
+			dataType : 'json',
+			success : function(data) {
+				console.log(data);
+			},
+			error : function(e) {
+				console.log(e);
+			}
+		});
+	</script>
+</body>
+</html>
